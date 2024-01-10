@@ -30,10 +30,10 @@ export async function imgCreate(formData) {
     // width: 600, height: 370, aspect-ratio: 1.62
     const result = await cloudinary.uploader.upload(fileUri, {
       invalidate: true,
-      folder: "galeria",
+      folder: "tienda_bicis",
       public_id: file.name,
-      aspect_ratio: "1.62",
-      width: 600,
+      aspect_ratio: "1",
+      width: 400,
       crop: "fill",
       gravity: "center"
     })
@@ -50,7 +50,7 @@ export async function imgRetrieveAll() {
   const result = await cloudinary.api.resources({
     max_results: 500,
     type: 'upload',
-    prefix: 'galeria'
+    prefix: 'tienda_bicis'
   });
 
   return result;
@@ -74,10 +74,10 @@ export async function imgUpdate(formData) {
     // width: 600, height: 370, aspect-ratio: 1.62
     const result = await cloudinary.uploader.upload(fileUri, {
       invalidate: true,
-      // folder: "galeria",
+      // folder: "tienda_bicis",
       public_id,  // public_id ya contiene folder
-      aspect_ratio: "1.62",
-      width: 600,
+      aspect_ratio: "1",
+      width: 400,
       crop: "fill",
       gravity: "center"
     })

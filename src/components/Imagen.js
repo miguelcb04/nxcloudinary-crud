@@ -10,9 +10,9 @@ function Imagen({ children, img }) {
                 onDragOver={dragOverHandler}
                 style={{
                     display: 'block',
-                    aspectRatio: 1.62,
-                    width: '324px',
-                    height: '200px',
+                    aspectRatio: 1,
+                    width: '400px',
+                    height: '400px',
                     objectFit: 'cover',
                     objectPosition: 'center'
                 }} />

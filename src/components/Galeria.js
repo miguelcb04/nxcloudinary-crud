@@ -33,7 +33,7 @@ async function Galeria({ images }) {
 
         <button formAction={crear} > Subir imagen</button>
       </Imagen>
-      <h1>Galería de imágenes</h1>
+      <h1>Tienda bicicletas</h1>
       <p>Para actualizar una imagen, arrastra y suelta sobre ella la nueva imagen, y luego pulsa en el botón <strong>Actualizar imagen</strong></p>
       <br />
       <div className='galeria'>
